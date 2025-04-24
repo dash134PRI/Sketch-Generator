@@ -42,7 +42,7 @@ A web application that transforms images into sketches and effects using advance
 1. Clone this repository:
 ```bash
 git clone <repository-url>
-cd app
+cd <path>
 ```
 
 2. Create a virtual environment (recommended):
