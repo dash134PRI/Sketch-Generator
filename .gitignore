@@ -1,0 +1,30 @@
+# Python virtual environment
+venv/
+env/
+ENV/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Local development settings
+.env
+.vscode/
+.idea/
+
+# Uploaded images and temporary files
+uploads/
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# System files
+.DS_Store
+Thumbs.db 
