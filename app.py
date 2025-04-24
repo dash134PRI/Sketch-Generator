@@ -98,8 +98,14 @@ def convert_to_sketch(image, style='classic'):
         elif style == 'detail-enhanced':
             sketch = cv2.detailEnhance(image, sigma_s=15, sigma_r=0.15)
         elif style == 'thermal':
+            # Convert to grayscale and normalize
             gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-            sketch = cv2.applyColorMap(gray, cv2.COLORMAP_JET)
+            # Normalize the image to enhance contrast
+            gray = cv2.normalize(gray, None, 0, 255, cv2.NORM_MINMAX)
+            # Apply thermal colormap
+            sketch = cv2.applyColorMap(gray, cv2.COLORMAP_INFERNO)
+            # Enhance contrast of the final result
+            sketch = cv2.convertScaleAbs(sketch, alpha=1.2, beta=10)
         elif style == 'denoised':
             sketch = cv2.fastNlMeansDenoisingColored(image, None, 10, 10, 7, 21)
         elif style == 'emboss':
