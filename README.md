@@ -1,13 +1,13 @@
 # Sketch Generator
 
-A powerful web application that transforms your images into artistic sketches and effects using advanced computer vision techniques. Built with Python, OpenCV, and Flask, this application offers multiple artistic styles and real-time preview capabilities.
+A web application that transforms images into sketches and effects using advanced computer vision techniques. Built with Python, OpenCV, and Flask, this application offers multiple artistic styles and real-time preview capabilities.
 
 ## Features
 
-- Modern, intuitive web interface
+- Intuitive web interface
 - Drag-and-drop or click-to-upload functionality
 - Real-time preview of both original and processed images
-- Multiple artistic styles and effects
+- Multiple styles and effects
 - One-click download option
 - Responsive design for all screen sizes
 
@@ -64,18 +64,18 @@ pip install -r requirements.txt
 python app.py
 ```
 
-2. Open your web browser and navigate to `http://localhost:5000`
+2. Open your web browser and navigate to `http://localhost:####`
 
 3. Using the interface:
    - Upload an image using the "Choose Image" button or drag and drop
-   - Select your desired effect from the style dropdown menu
+   - Select effect from the style dropdown menu
    - Click "Convert to Sketch" to process the image
    - Preview the result in the output window
    - Click "Download Sketch" to save the processed image
 
 ## Technical Details
 
-The application uses various OpenCV techniques for image processing:
+The application uses following OpenCV techniques for image processing:
 
 ### Core Processing
 - Grayscale conversion
